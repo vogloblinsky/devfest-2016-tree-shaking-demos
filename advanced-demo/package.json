@@ -1,0 +1,21 @@
+{
+  "name": "devfest-2016-tree-shaking-advanced-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "rollup": "rollup -c",
+    "rollup-prod": "npm run rollup && uglifyjs -c -m -o build/main.min.js -- build/main.js && filesize-cli build/main.min.js"
+    
+  },
+  "author": "vogloblinsky-sii <vogloblinsky@sii.fr>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "filesize-cli": "0.0.3",
+    "lodash-es": "^4.16.6",
+    "rollup-plugin-filesize": "^1.0.1",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "uglify-js": "^2.7.4"
+  }
+}
