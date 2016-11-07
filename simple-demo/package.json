@@ -1,0 +1,19 @@
+{
+  "name": "devfest-2016-tree-shaking-simple-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "rollup": "rollup -c",
+    "webpack": "webpack --progress --display-modules --output-pathinfo --display-used-exports --display-provided-exports",
+    "webpack-prod": "webpack --progress --display-modules --output-pathinfo --display-used-exports --display-provided-exports --optimize-minimize --output-path build --output-filename main.webpack.min.js"
+  },
+  "author": "vogloblinsky-sii <vogloblinsky@sii.fr>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015-native-modules": "^6.9.4",
+    "rollup-plugin-filesize": "^1.0.1",
+    "webpack": "^2.1.0-beta.25"
+  }
+}
