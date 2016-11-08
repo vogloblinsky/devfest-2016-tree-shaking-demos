@@ -5,8 +5,9 @@
   "main": "",
   "scripts": {
     "rollup": "rollup -c",
-    "rollup-prod": "npm run rollup && uglifyjs -c -m -o build/main.min.js -- build/main.js && filesize-cli build/main.min.js"
-    
+    "rollup-prod": "npm run rollup && uglifyjs -c -m -o build/main.min.js -- build/main.js && filesize-cli build/main.min.js",
+    "webpack": "webpack --progress --display-modules --output-pathinfo --display-used-exports --display-provided-exports",
+    "webpack-prod": "webpack --progress --display-modules --output-pathinfo --display-used-exports --display-provided-exports --optimize-minimize --output-path build --output-filename main.webpack.min.js"
   },
   "author": "vogloblinsky-sii <vogloblinsky@sii.fr>",
   "license": "ISC",
@@ -16,6 +17,8 @@
     "lodash-es": "^4.16.6",
     "rollup-plugin-filesize": "^1.0.1",
     "rollup-plugin-node-resolve": "^2.0.0",
-    "uglify-js": "^2.7.4"
+    "uglify-js": "^2.7.4",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-bundle-analyzer": "^1.4.2"
   }
 }
