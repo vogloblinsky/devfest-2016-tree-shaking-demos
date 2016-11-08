@@ -4,8 +4,8 @@ import uglify from 'rollup-plugin-uglify';
 
 export default {
     entry: 'src/main.js',
-    dest: 'build/main.js',
-    format: 'umd',
+    dest: 'build/main.rollup.js',
+    format: 'cjs',
     sourceMap: false,
     plugins: [
         node({

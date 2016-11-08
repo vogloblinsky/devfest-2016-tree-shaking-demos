@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "rollup": "rollup -c",
-    "rollup-prod": "npm run rollup && uglifyjs -c -m -o build/main.min.js -- build/main.js && filesize-cli build/main.min.js",
+    "rollup-prod": "npm run rollup && uglifyjs -c -m -o build/main.min.js -- build/main.rollup.js && filesize-cli build/main.min.js",
     "webpack": "webpack --progress --display-modules --output-pathinfo --display-used-exports --display-provided-exports",
     "webpack-prod": "webpack --progress --display-modules --output-pathinfo --display-used-exports --display-provided-exports --optimize-minimize --output-path build --output-filename main.webpack.min.js"
   },
