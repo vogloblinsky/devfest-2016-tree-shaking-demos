@@ -11,6 +11,6 @@ console.log(addition, compiled({
 
 /*
 import * as lodash from 'lodash-es';
-const compiled = template( '<h1 class="<%-className%>"><%=title%></h1>' );
+const compiled = lodash.template( '<h1 class="<%-className%>"><%=title%></h1>' );
 const addition = lodash.add(5,5);
 */
