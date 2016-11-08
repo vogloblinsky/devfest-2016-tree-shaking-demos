@@ -1,5 +1,4 @@
-const webpack = require('webpack'),
-    BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const webpack = require('webpack');
 
 module.exports = {
     entry: './src/main.js',
