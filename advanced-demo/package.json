@@ -1,24 +1,25 @@
 {
-  "name": "devfest-2016-tree-shaking-advanced-demo",
+  "name": "tree-shaking-advanced-demo",
   "version": "1.0.0",
   "description": "",
   "main": "",
   "scripts": {
     "rollup": "rollup -c",
-    "rollup-prod": "npm run rollup && uglifyjs -c -m -o build/main.min.js -- build/main.rollup.js && filesize-cli build/main.min.js",
+    "rollup-prod": "npm run rollup && uglifyjs -c -m -o build/main.rollup.min.js -- build/main.rollup.js && filesize-cli build/main.rollup.min.js",
     "webpack": "webpack --progress --display-modules --output-pathinfo --display-used-exports --display-provided-exports",
     "webpack-prod": "webpack --progress --display-modules --output-pathinfo --display-used-exports --display-provided-exports --optimize-minimize --output-path build --output-filename main.webpack.min.js"
   },
-  "author": "vogloblinsky-sii <vogloblinsky@sii.fr>",
-  "license": "ISC",
-  "dependencies": {},
+  "author": "Vincent Ogloblinsky",
+  "license": "MIT",
   "devDependencies": {
     "filesize-cli": "0.0.3",
-    "lodash-es": "^4.16.6",
-    "rollup-plugin-filesize": "^1.0.1",
-    "rollup-plugin-node-resolve": "^2.0.0",
-    "uglify-js": "^2.7.4",
-    "webpack": "^2.1.0-beta.25",
-    "webpack-bundle-analyzer": "^1.4.2"
+    "lodash-es": "^4.17.4",
+    "rollup": "^0.41.6",
+    "rollup-plugin-filesize": "^1.2.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
+    "uglify-js": "^2.8.22",
+    "webpack": "^2.3.3",
+    "webpack-bundle-analyzer": "^2.3.1"
   }
 }
