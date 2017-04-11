@@ -1,6 +1,6 @@
-# devfest-2016-tree-shaking-demos
+# talk-tree-shaking-demos
 
-Démos du talk devfest-2016-tree-shaking-slides
+Démos du talk sur le tree-shaking
 
 ## Simple
 
